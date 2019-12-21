@@ -1,0 +1,244 @@
+Microsoft Windows [Version 10.0.16299.98]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+E:\Code\firebasecli\firebase-cloud-functions>cd myCloudFunction
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>firebase login
+Already logged in as pritamkhose1@gmail.com
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>firebase init functions
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction
+
+? Are you ready to proceed? Yes
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: node-pritam (node)
+i  Using project node-pritam (node)
+
+=== Functions Setup
+
+A functions directory will be created in your project with a Node.js
+package pre-configured. Functions can be deployed with firebase deploy.
+
+? What language would you like to use to write Cloud Functions? JavaScript
+? Do you want to use ESLint to catch probable bugs and enforce style? Yes
++  Wrote functions/package.json
++  Wrote functions/.eslintrc.json
++  Wrote functions/index.js
++  Wrote functions/.gitignore
+? Do you want to install dependencies with npm now? Yes
+
+> protobufjs@6.8.8 postinstall E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions\node_modules\protobufjs
+> node scripts/postinstall
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 371 packages from 246 contributors and audited 1008 packages in 135.427s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+i  Writing gitignore file to .gitignore...
+
++  Firebase initialization complete!
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>npm i express
+npm WARN saveError ENOENT: no such file or directory, open 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json'
+npm WARN myCloudFunction No description
+npm WARN myCloudFunction No repository field.
+npm WARN myCloudFunction No README data
+npm WARN myCloudFunction No license field.
+
++ express@4.17.1
+added 50 packages from 37 contributors and audited 126 packages in 5.89s
+found 0 vulnerabilities
+
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>npm serve
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, fund, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\Pritam\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.13.1 C:\Program Files\nodejs\node_modules\npm
+
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>npm run serve
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pritam\AppData\Roaming\npm-cache\_logs\2019-12-21T05_10_57_855Z-debug.log
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>npm run serve
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pritam\AppData\Roaming\npm-cache\_logs\2019-12-21T05_11_09_791Z-debug.log
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>npm install cors
+npm WARN saveError ENOENT: no such file or directory, open 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\package.json'
+npm WARN myCloudFunction No description
+npm WARN myCloudFunction No repository field.
+npm WARN myCloudFunction No README data
+npm WARN myCloudFunction No license field.
+
++ cors@2.8.5
+added 2 packages from 2 contributors and audited 289 packages in 1.736s
+found 0 vulnerabilities
+
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>firebase serve
+
+=== Serving from 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction'...
+
+!  Your requested "node" version "8" doesn't match your global version "13"
++  functions: Emulator started at http://localhost:5000
+i  functions: Watching "E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions" for Cloud Functions...
++  functions[api2]: http function initialized (http://localhost:5000/node-pritam/us-central1/api2).
+!  functions: Could not find trigger "api2)." in your functions directory.
+!  Your function was killed because it raised an unhandled error.
+i  functions: Beginning execution of "api2)."
+!  functions: TypeError: Cannot read property 'definition' of undefined
+    at C:\Users\Pritam\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:657:47
+    at Generator.next (<anonymous>)
+    at C:\Users\Pritam\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Pritam\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:3:12)
+    at invokeTrigger (C:\Users\Pritam\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:649:12)
+    at C:\Users\Pritam\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:773:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Pritam\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:4:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+Error: An unexpected error has occurred.
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>firebase serve
+
+=== Serving from 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction'...
+
+!  Your requested "node" version "8" doesn't match your global version "13"
++  functions: Emulator started at http://localhost:5000
+i  functions: Watching "E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions" for Cloud Functions...
++  functions[helloWorld]: http function initialized (http://localhost:5000/node-pritam/us-central1/helloWorld).
++  functions[api2]: http function initialized (http://localhost:5000/node-pritam/us-central1/api2).
+i  functions: Beginning execution of "api2"
+i  functions: Finished "api2" in ~1s
+i  functions: Beginning execution of "api2"
+i  functions: Finished "api2" in ~1s
+i  functions: Beginning execution of "helloWorld"
+i  functions: Finished "helloWorld" in ~1s
+Shutting down...
+Terminate batch job (Y/N)? y
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>
+
+Microsoft Windows [Version 10.0.16299.98]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction>cd functions
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions>firebase serve
+
+=== Serving from 'E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction'...
+
+!  Your requested "node" version "8" doesn't match your global version "13"
++  functions: Emulator started at http://localhost:5000
+i  functions: Watching "E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions" for Cloud Functions...
++  functions[helloWorld]: http function initialized (http://localhost:5000/node-pritam/us-central1/helloWorld).
++  functions[api2]: http function initialized (http://localhost:5000/node-pritam/us-central1/api2).
+i  functions: Beginning execution of "api2"
+i  functions: Finished "api2" in ~1s
+i  functions: Beginning execution of "helloWorld"
+i  functions: Finished "helloWorld" in ~1s
+i  functions: Beginning execution of "api2"
+i  functions: Finished "api2" in ~1s
+i  functions: Beginning execution of "helloWorld"
+i  functions: Finished "helloWorld" in ~1s
+Shutting down...
+Terminate batch job (Y/N)? y
+
+E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions>npm run deploy
+
+> functions@ deploy E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions
+> firebase deploy --only functions
+
+
+=== Deploying to 'node-pritam'...
+
+i  deploying functions
+Running command: npm --prefix "$RESOURCE_DIR" run lint
+
+> functions@ lint E:\Code\firebasecli\firebase-cloud-functions\myCloudFunction\functions
+> eslint .
+
++  functions: Finished running predeploy script.
+i  functions: ensuring necessary APIs are enabled...
++  functions: all necessary APIs are enabled
+i  functions: preparing functions directory for uploading...
+i  functions: packaged functions (40.2 KB) for uploading
++  functions: functions folder uploaded successfully
+i  functions: creating Node.js 8 function helloWorld(us-central1)...
+i  functions: creating Node.js 8 function api2(us-central1)...
++  functions[helloWorld(us-central1)]: Successful create operation.
+Function URL (helloWorld): https://us-central1-node-pritam.cloudfunctions.net/helloWorld
++  functions[api2(us-central1)]: Successful create operation.
+Function URL (api2): https://us-central1-node-pritam.cloudfunctions.net/api2
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/node-pritam/overview
